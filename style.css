@@ -1,0 +1,87 @@
+body
+{
+	height:50%:
+	width: 200%;
+	overflow: scroll;
+	background-image: url('fond.jpg');
+}
+#header
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+#liséré
+{
+	position: absolute;
+	top:30px;
+  	width: 70px;
+  	height: 90%;
+  	background: black;
+}
+header h1,p
+{
+	color: black;
+}
+img
+{
+	width: 8%;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	box-shadow: 3px 3px 3px 3px;
+}
+section
+{
+	display: flex;
+}
+article
+{
+	display: inline-block;
+	justify-content: space-between;
+	width: 20%;
+	margin-top: 100px;
+	margin-left: 100px;	
+}
+article h1
+{
+	color: black;
+}
+article ul
+{
+	color: black;
+}
+@media all and (max-width: 480px)
+{
+	header h1
+	{
+		color: red;
+	}
+	#liséré
+	{
+		display: none;
+	}
+	section, article ul
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 0%;
+		padding-left: 0%;
+	}	
+	body
+	{
+		background: url(mobilefond.jpg);
+		background-size: 200%;
+		background-position: nowrap;
+		background-repeat: no-repeat;
+	}
+	img
+	{
+	width: 15%;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	box-shadow: 3px 3px 3px 3px;
+	}
+}
